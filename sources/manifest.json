@@ -1,0 +1,54 @@
+{
+  "source_repo_head": "4e91b55a67a09fc39d00c87534427dc014f35a3d",
+  "snapshot_note": "Copied current working-tree contents, including existing uncommitted edits; source repository was not modified.",
+  "files": [
+    {
+      "source_path": "/Users/duan/Documents/triton-eq/triton-operator-equivalence-cases/triton-operator-equivalence-cases/cases/case1_matmul_grouped_ordering/before.py",
+      "snapshot": "sources/case1_matmul_grouped_ordering/before.py",
+      "sha256": "f3a5be7e27abfd5d8e81f662a8c3458cee56b5cc46ac6a63631e3f2af2a0b991"
+    },
+    {
+      "source_path": "/Users/duan/Documents/triton-eq/triton-operator-equivalence-cases/triton-operator-equivalence-cases/cases/case1_matmul_grouped_ordering/after.py",
+      "snapshot": "sources/case1_matmul_grouped_ordering/after.py",
+      "sha256": "7697b811e81a4bd701695961a5fe39892f2c2b01059eb585e4d0905579d86e49"
+    },
+    {
+      "source_path": "/Users/duan/Documents/triton-eq/triton-operator-equivalence-cases/triton-operator-equivalence-cases/cases/case1_matmul_grouped_ordering/CASE.md",
+      "snapshot": "sources/case1_matmul_grouped_ordering/CASE.md",
+      "sha256": "4c2b91c3cbd1f3941dcaba0b3548cce0cb43c7ec5dad9fcf8eb1081e85ad2e9a"
+    },
+    {
+      "source_path": "/Users/duan/Documents/triton-eq/triton-operator-equivalence-cases/triton-operator-equivalence-cases/cases/case2_elementwise_persistent_tiling/before.py",
+      "snapshot": "sources/case2_elementwise_persistent_tiling/before.py",
+      "sha256": "660fa4ad7904f947b4789ab541404a7fb5c27f903065922aa9514b02dcf8e730"
+    },
+    {
+      "source_path": "/Users/duan/Documents/triton-eq/triton-operator-equivalence-cases/triton-operator-equivalence-cases/cases/case2_elementwise_persistent_tiling/after.py",
+      "snapshot": "sources/case2_elementwise_persistent_tiling/after.py",
+      "sha256": "c7fe192d33eaed5b214d926d7f7ecbb1bb6db380472cb086139ad169a0c5f82a"
+    },
+    {
+      "source_path": "/Users/duan/Documents/triton-eq/triton-operator-equivalence-cases/triton-operator-equivalence-cases/cases/case2_elementwise_persistent_tiling/CASE.md",
+      "snapshot": "sources/case2_elementwise_persistent_tiling/CASE.md",
+      "sha256": "380aee851c74838d0952ca467100753c32d05859dbb1a97eb91c8ec882f0d96c"
+    },
+    {
+      "derived_from": "sources/case2_elementwise_persistent_tiling/after.py",
+      "snapshot": "mutants/relu_min.py",
+      "mutation": {
+        "old": "tl.maximum(x + y, 0.0)",
+        "new": "tl.minimum(x + y, 0.0)"
+      },
+      "sha256": "0321615cc3a29178f35bb4e2b7e660dd26ffd945ddcbe2b30846e25a3a58e526"
+    },
+    {
+      "derived_from": "sources/case1_matmul_grouped_ordering/after.py",
+      "snapshot": "mutants/matmul_missing_term.py",
+      "mutation": {
+        "old": "mask=offs_k[None, :] < K - k * BLOCK_K",
+        "new": "mask=offs_k[None, :] < (K - 1) - k * BLOCK_K"
+      },
+      "sha256": "a726e17c13a56814bc5b1836e75d100ff4feb82b9bae8be9966ef7fb36246199"
+    }
+  ]
+}

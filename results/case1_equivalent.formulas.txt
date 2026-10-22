@@ -1,0 +1,165 @@
+BEFORE (unsimplified scalar formula)
+(let ((a!1 (and (>= (- out_index_0 32) 0) (< (- out_index_0 32) 16)))
+      (a!2 (and (>= (- out_index_1 16) 0) (< (- out_index_1 16) 16)))
+      (a!3 (* (A (* 19 (mod out_index_0 33))) (B (mod out_index_1 17))))
+      (a!4 (A (+ 1 (* 19 (mod out_index_0 33)))))
+      (a!6 (A (+ 2 (* 19 (mod out_index_0 33)))))
+      (a!8 (A (+ 3 (* 19 (mod out_index_0 33)))))
+      (a!10 (A (+ 4 (* 19 (mod out_index_0 33)))))
+      (a!12 (A (+ 5 (* 19 (mod out_index_0 33)))))
+      (a!14 (A (+ 6 (* 19 (mod out_index_0 33)))))
+      (a!16 (A (+ 7 (* 19 (mod out_index_0 33)))))
+      (a!18 (A (+ 8 (* 19 (mod out_index_0 33)))))
+      (a!20 (A (+ 9 (* 19 (mod out_index_0 33)))))
+      (a!22 (A (+ 10 (* 19 (mod out_index_0 33)))))
+      (a!24 (A (+ 11 (* 19 (mod out_index_0 33)))))
+      (a!26 (A (+ 12 (* 19 (mod out_index_0 33)))))
+      (a!28 (A (+ 13 (* 19 (mod out_index_0 33)))))
+      (a!30 (A (+ 14 (* 19 (mod out_index_0 33)))))
+      (a!32 (A (+ 15 (* 19 (mod out_index_0 33)))))
+      (a!34 (A (+ 16 (* 19 (mod out_index_0 33)))))
+      (a!36 (A (+ 17 (* 19 (mod out_index_0 33)))))
+      (a!38 (A (+ 18 (* 19 (mod out_index_0 33)))))
+      (a!41 (and (>= (- out_index_1 0) 0) (< (- out_index_1 0) 16)))
+      (a!42 (and (>= (- out_index_0 16) 0) (< (- out_index_0 16) 16)))
+      (a!43 (and (>= (- out_index_0 0) 0) (< (- out_index_0 0) 16))))
+(let ((a!5 (* a!4 (B (+ 17 (mod out_index_1 17)))))
+      (a!7 (* a!6 (B (+ 34 (mod out_index_1 17)))))
+      (a!9 (* a!8 (B (+ 51 (mod out_index_1 17)))))
+      (a!11 (* a!10 (B (+ 68 (mod out_index_1 17)))))
+      (a!13 (* a!12 (B (+ 85 (mod out_index_1 17)))))
+      (a!15 (* a!14 (B (+ 102 (mod out_index_1 17)))))
+      (a!17 (* a!16 (B (+ 119 (mod out_index_1 17)))))
+      (a!19 (* a!18 (B (+ 136 (mod out_index_1 17)))))
+      (a!21 (* a!20 (B (+ 153 (mod out_index_1 17)))))
+      (a!23 (* a!22 (B (+ 170 (mod out_index_1 17)))))
+      (a!25 (* a!24 (B (+ 187 (mod out_index_1 17)))))
+      (a!27 (* a!26 (B (+ 204 (mod out_index_1 17)))))
+      (a!29 (* a!28 (B (+ 221 (mod out_index_1 17)))))
+      (a!31 (* a!30 (B (+ 238 (mod out_index_1 17)))))
+      (a!33 (* a!32 (B (+ 255 (mod out_index_1 17)))))
+      (a!35 (* a!34 (B (+ 272 (mod out_index_1 17)))))
+      (a!37 (* a!36 (B (+ 289 (mod out_index_1 17)))))
+      (a!39 (* a!38 (B (+ 306 (mod out_index_1 17))))))
+(let ((a!40 (+ 0.0
+               a!3
+               a!5
+               a!7
+               a!9
+               a!11
+               a!13
+               a!15
+               a!17
+               a!19
+               a!21
+               a!23
+               a!25
+               a!27
+               a!29
+               a!31
+               a!33
+               a!35
+               a!37
+               a!39
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0))))
+(let ((a!44 (ite (and a!42 a!41)
+                 a!40
+                 (ite (and a!43 a!2) a!40 (ite (and a!43 a!41) a!40 0.0)))))
+  (ite (and a!1 a!2)
+       a!40
+       (ite (and a!1 a!41) a!40 (ite (and a!42 a!2) a!40 a!44)))))))
+
+AFTER (unsimplified scalar formula)
+(let ((a!1 (and (>= (- out_index_0 32) 0) (< (- out_index_0 32) 16)))
+      (a!2 (and (>= (- out_index_1 16) 0) (< (- out_index_1 16) 16)))
+      (a!3 (* (A (* 19 (mod out_index_0 33))) (B (mod out_index_1 17))))
+      (a!4 (A (+ 1 (* 19 (mod out_index_0 33)))))
+      (a!6 (A (+ 2 (* 19 (mod out_index_0 33)))))
+      (a!8 (A (+ 3 (* 19 (mod out_index_0 33)))))
+      (a!10 (A (+ 4 (* 19 (mod out_index_0 33)))))
+      (a!12 (A (+ 5 (* 19 (mod out_index_0 33)))))
+      (a!14 (A (+ 6 (* 19 (mod out_index_0 33)))))
+      (a!16 (A (+ 7 (* 19 (mod out_index_0 33)))))
+      (a!18 (A (+ 8 (* 19 (mod out_index_0 33)))))
+      (a!20 (A (+ 9 (* 19 (mod out_index_0 33)))))
+      (a!22 (A (+ 10 (* 19 (mod out_index_0 33)))))
+      (a!24 (A (+ 11 (* 19 (mod out_index_0 33)))))
+      (a!26 (A (+ 12 (* 19 (mod out_index_0 33)))))
+      (a!28 (A (+ 13 (* 19 (mod out_index_0 33)))))
+      (a!30 (A (+ 14 (* 19 (mod out_index_0 33)))))
+      (a!32 (A (+ 15 (* 19 (mod out_index_0 33)))))
+      (a!34 (A (+ 16 (* 19 (mod out_index_0 33)))))
+      (a!36 (A (+ 17 (* 19 (mod out_index_0 33)))))
+      (a!38 (A (+ 18 (* 19 (mod out_index_0 33)))))
+      (a!41 (and (>= (- out_index_1 0) 0) (< (- out_index_1 0) 16)))
+      (a!42 (and (>= (- out_index_0 16) 0) (< (- out_index_0 16) 16)))
+      (a!43 (and (>= (- out_index_0 0) 0) (< (- out_index_0 0) 16))))
+(let ((a!5 (* a!4 (B (+ 17 (mod out_index_1 17)))))
+      (a!7 (* a!6 (B (+ 34 (mod out_index_1 17)))))
+      (a!9 (* a!8 (B (+ 51 (mod out_index_1 17)))))
+      (a!11 (* a!10 (B (+ 68 (mod out_index_1 17)))))
+      (a!13 (* a!12 (B (+ 85 (mod out_index_1 17)))))
+      (a!15 (* a!14 (B (+ 102 (mod out_index_1 17)))))
+      (a!17 (* a!16 (B (+ 119 (mod out_index_1 17)))))
+      (a!19 (* a!18 (B (+ 136 (mod out_index_1 17)))))
+      (a!21 (* a!20 (B (+ 153 (mod out_index_1 17)))))
+      (a!23 (* a!22 (B (+ 170 (mod out_index_1 17)))))
+      (a!25 (* a!24 (B (+ 187 (mod out_index_1 17)))))
+      (a!27 (* a!26 (B (+ 204 (mod out_index_1 17)))))
+      (a!29 (* a!28 (B (+ 221 (mod out_index_1 17)))))
+      (a!31 (* a!30 (B (+ 238 (mod out_index_1 17)))))
+      (a!33 (* a!32 (B (+ 255 (mod out_index_1 17)))))
+      (a!35 (* a!34 (B (+ 272 (mod out_index_1 17)))))
+      (a!37 (* a!36 (B (+ 289 (mod out_index_1 17)))))
+      (a!39 (* a!38 (B (+ 306 (mod out_index_1 17))))))
+(let ((a!40 (+ 0.0
+               a!3
+               a!5
+               a!7
+               a!9
+               a!11
+               a!13
+               a!15
+               a!17
+               a!19
+               a!21
+               a!23
+               a!25
+               a!27
+               a!29
+               a!31
+               a!33
+               a!35
+               a!37
+               a!39
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0)
+               (* 0.0 0.0))))
+(let ((a!44 (ite (and a!43 a!2)
+                 a!40
+                 (ite (and a!42 a!41) a!40 (ite (and a!43 a!41) a!40 0.0)))))
+  (ite (and a!1 a!2)
+       a!40
+       (ite (and a!1 a!41) a!40 (ite (and a!42 a!2) a!40 a!44)))))))

@@ -1,0 +1,1 @@
+[out_index_0 = 0, X = [else -> 0], Y = [else -> 1/2]]

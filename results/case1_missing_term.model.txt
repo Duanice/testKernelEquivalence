@@ -1,0 +1,4 @@
+[out_index_0 = 32,
+ out_index_1 = 16,
+ B = [else -> 2],
+ A = [else -> 3]]
