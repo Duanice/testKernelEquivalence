@@ -1,0 +1,73 @@
+{
+  "scope": "CPU arithmetic checks of reported mechanisms; no Triton execution or GPU reproduction",
+  "pdist": [
+    {
+      "N": 46341,
+      "input_elements_for_M4": 185364,
+      "intermediate_product": 2147441940,
+      "signed_i32_product": 2147441940,
+      "mathematical_pairs": 1073720970
+    },
+    {
+      "N": 46342,
+      "input_elements_for_M4": 185368,
+      "intermediate_product": 2147534622,
+      "signed_i32_product": -2147432674,
+      "mathematical_pairs": 1073767311
+    }
+  ],
+  "grid": [
+    {
+      "N": 200,
+      "B": 256,
+      "old_grid": 0,
+      "new_grid": 1,
+      "missing_outputs": 200
+    },
+    {
+      "N": 256,
+      "B": 256,
+      "old_grid": 1,
+      "new_grid": 1,
+      "missing_outputs": 0
+    },
+    {
+      "N": 257,
+      "B": 256,
+      "old_grid": 1,
+      "new_grid": 2,
+      "missing_outputs": 1
+    },
+    {
+      "N": 300,
+      "B": 256,
+      "old_grid": 1,
+      "new_grid": 2,
+      "missing_outputs": 44
+    }
+  ],
+  "ascend_grid": {
+    "x": 200,
+    "y": 481,
+    "product": 96200,
+    "reported_limit": 65535
+  },
+  "randn_address": {
+    "pid": 1048576,
+    "BLOCK": 512,
+    "unroll": 4,
+    "integer_offset": 2147483648,
+    "signed_i32_offset": -2147483648
+  },
+  "softcap_padding": {
+    "V": 3,
+    "softcap": 1,
+    "correct_loss": 1.0986122886681098,
+    "one_bad_padding_lane_loss": 1.2142833003627604
+  },
+  "group_scaling": {
+    "note": "Arithmetic illustration, not evaluation of the reported kernel including its invalid modulo",
+    "groupwise_sum": 288,
+    "one_first_group_scale_for_64_terms": 64
+  }
+}

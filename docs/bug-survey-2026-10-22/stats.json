@@ -1,0 +1,72 @@
+{
+  "total": 40,
+  "core": 36,
+  "supplement": 4,
+  "core_by_repo": {
+    "flagos-ai/FlagGems": 13,
+    "vllm-project/vllm": 12,
+    "triton-lang/triton": 11
+  },
+  "core_by_layer": {
+    "application": 27,
+    "unresolved": 1,
+    "compiler_disputed": 1,
+    "compiler_report": 7
+  },
+  "application_roots": {
+    "index_layout": 6,
+    "coverage_launch": 4,
+    "integer_overflow": 5,
+    "tail_mask": 7,
+    "numeric_dtype": 3,
+    "spec_semantics": 1,
+    "tile_group": 1
+  },
+  "application_condition_reported": 23,
+  "application_total": 27,
+  "application_condition_ids": [
+    "F02",
+    "F03",
+    "F04",
+    "F05",
+    "F06",
+    "F07",
+    "F08",
+    "F09",
+    "F10",
+    "F11",
+    "V01",
+    "V02",
+    "V03",
+    "V04",
+    "V05",
+    "V06",
+    "V07",
+    "V08",
+    "V09",
+    "V11",
+    "T01",
+    "T02",
+    "T03"
+  ],
+  "excluded_condition_ids": [
+    "F01",
+    "F12",
+    "F13",
+    "V10"
+  ],
+  "core_evidence": {
+    "A": 15,
+    "B": 21
+  },
+  "all_evidence": {
+    "A": 18,
+    "B": 22
+  },
+  "unique_core_sources": 34,
+  "unique_all_sources": 37,
+  "core_merged_defects": [
+    "F01",
+    "F02"
+  ]
+}

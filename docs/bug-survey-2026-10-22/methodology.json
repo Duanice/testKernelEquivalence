@@ -1,0 +1,31 @@
+{
+  "date_local": "2026-10-22",
+  "timezone": "America/Los_Angeles",
+  "date_utc": "2026-10-23",
+  "primary_repositories": [
+    "triton-lang/triton",
+    "vllm-project/vllm",
+    "flagos-ai/FlagGems"
+  ],
+  "selection": "Purposive correctness-focused sample; 9 keyword queries plus user-provided seeds. No exhaustive/random sampling claim.",
+  "search_results": 157,
+  "unique_search_results": 151,
+  "included_core_sources": 34,
+  "included_core_defects": 36,
+  "included_supplement_sources": 3,
+  "included_supplement_defects": 4,
+  "counting": "One record per independent defect or tightly related root-cause family. Split FlagGems#5234 and vLLM#52576 into two. Split supplemental Unsloth#13830 into two. Collapse FlagGems#7539 into #6978; collapse related issue/fix/backport/vendor copies. V62697 retains only unresolved Triton reader pattern A; HIP writer pattern B excluded.",
+  "evidence_A": "Read report and key production-code PR diff. Does not imply merged, independent GPU reproduction, or verified correctness of the fix.",
+  "evidence_B": "Read relevant issue narrative, reproduction/log/IR sections or in-body code fragments; no separate production-fix diff reviewed. Triton compiler issue comments also read.",
+  "conditional_tag": "At least one explicit shape/autotune/layout trigger in report; not proof that this is the complete or exclusive failure condition. operator_parameter/data/dtype/backend alone are not included.",
+  "gpu_reproduced": false,
+  "local_verification": "CPU arithmetic only for pdist threshold, grid coverage, grid product, signed wrap, padding softcap and group-scale illustration.",
+  "limitations": [
+    "Keyword and result-ranking bias",
+    "Open PRs and reporter claims retained with evidence labels",
+    "Many related implementations/authors; records are not independent random observations",
+    "Hypothesized verifier applicability is not measured detection or proof coverage",
+    "No root cause inferred solely from repository name",
+    "Absence of a shape tag does not establish shape independence"
+  ]
+}
